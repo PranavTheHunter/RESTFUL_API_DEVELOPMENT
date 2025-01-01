@@ -1,0 +1,25 @@
+REST API LIBRARY INVENTORY MANAGEMENT
+Design and implemen Crud operation 
+
+DATA -JSON FORMAT
+
+ROUTES
+//Create
+POST/books - Create book
+
+//READ
+GET/books - List all books
+
+GET/books/1 - get the book with id 1
+GET/books/2 - get the book with id 2
+
+//UPDATE
+PATCH/books/1 -Edit the book with id 1
+
+//DELETE
+DELETE/books/1 - DELETE the book with id 1
+
+MOCK DATA IS GENRATED BY 
+MACKARO.com
+
+

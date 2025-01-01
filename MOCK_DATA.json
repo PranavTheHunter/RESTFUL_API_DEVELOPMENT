@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "title": "Five and Ten",
+        "author": "Jeniece Kringe",
+        "price": "$28.79",
+        "DOI": "29/04/2024",
+        "genre": "Romance"
+    },
+    {
+        "id": 2,
+        "title": "End of the World",
+        "author": "Caril Burless",
+        "price": "$16.67",
+        "DOI": "04/02/2022",
+        "genre": "Mystery|Sci-Fi|Thriller"
+    },
+    {
+        "id": 3,
+        "title": "Foreign Letters",
+        "author": "Jolynn Felgat",
+        "price": "$11.82",
+        "DOI": "19/06/2024",
+        "genre": "Comedy|Drama"
+    },
+    {
+        "id": 4,
+        "title": "Tribute",
+        "author": "Alleen Fellis",
+        "price": "$19.42",
+        "DOI": "22/08/2022",
+        "genre": "Drama|Mystery|Romance"
+    },
+    {
+        "id": 5,
+        "title": "Almost You",
+        "author": "Misty Webb-Bowen",
+        "price": "$25.16",
+        "DOI": "22/10/2024",
+        "genre": "Comedy|Drama"
+    },
+    {
+        "id": 6,
+        "title": "Ankur (The Seedling)",
+        "author": "Kaile Craydon",
+        "price": "$43.34",
+        "DOI": "15/07/2022",
+        "genre": "Drama"
+    },
+    {
+        "id": 7,
+        "title": "Make the Yuletide Gay",
+        "author": "Hendrick Woodman",
+        "price": "$10.54",
+        "DOI": "31/01/2022",
+        "genre": "Comedy|Romance"
+    },
+    {
+        "id": 8,
+        "title": "Demetrius and the Gladiators",
+        "author": "Nevin Priestland",
+        "price": "$40.39",
+        "DOI": "19/01/2022",
+        "genre": "Drama"
+    },
+    {
+        "id": 9,
+        "title": "Dreamlife of Angels, The (Vie rêvée des anges, La)",
+        "author": "Aretha Dunnet",
+        "price": "$3.20",
+        "DOI": "14/04/2023",
+        "genre": "Drama"
+    },
+    {
+        "id": 10,
+        "title": "Acadia Acadia?!? (L'acadie, l'Acadie)",
+        "author": "Mandy Diprose",
+        "price": "$31.78",
+        "DOI": "01/02/2022",
+        "genre": "Documentary"
+    },
+    {
+        "id": 11,
+        "title": "Selfish Giant, The",
+        "author": "Anthony Tremayle",
+        "price": "$36.91",
+        "DOI": "16/10/2022",
+        "genre": "Drama"
+    },
+    {
+        "id": 12,
+        "title": "Perfume: The Story of a Murderer",
+        "author": "Ardelis Feaveer",
+        "price": "$49.85",
+        "DOI": "11/03/2023",
+        "genre": "Crime|Drama|Thriller"
+    },
+    {
+        "id": 13,
+        "title": "Adventures of Milo and Otis, The (Koneko monogatari)",
+        "author": "Dominic Hanks",
+        "price": "$17.79",
+        "DOI": "06/02/2024",
+        "genre": "Adventure|Children|Comedy|Drama"
+    },
+    {
+        "id": 14,
+        "title": "Beaver Trilogy Part IV",
+        "author": "Cicely Siberry",
+        "price": "$34.35",
+        "DOI": "20/02/2022",
+        "genre": "Documentary"
+    },
+    {
+        "id": 15,
+        "title": "Rikyu",
+        "author": "Iorgo Carpe",
+        "price": "$36.39",
+        "DOI": "28/06/2024",
+        "genre": "Drama"
+    },
+    {
+        "id": 16,
+        "title": "Into the Middle of Nowhere",
+        "author": "Cully Parffrey",
+        "price": "$5.98",
+        "DOI": "07/11/2022",
+        "genre": "Adventure|Children|Comedy|Documentary|Drama"
+    },
+    {
+        "id": 17,
+        "title": "Gambler, The (Játékos, A)",
+        "author": "Carlota Fierman",
+        "price": "$11.91",
+        "DOI": "01/06/2023",
+        "genre": "Drama"
+    },
+    {
+        "id": 18,
+        "title": "On a marché sur Bangkok",
+        "author": "Arabella Colbran",
+        "price": "$47.84",
+        "DOI": "19/03/2023",
+        "genre": "Comedy"
+    },
+    {
+        "id": 19,
+        "title": "Terror Within, The",
+        "author": "Waite MacCoveney",
+        "price": "$38.92",
+        "DOI": "02/08/2024",
+        "genre": "Horror|Sci-Fi"
+    },
+    {
+        "id": 20,
+        "title": "Sunset Blvd. (a.k.a. Sunset Boulevard)",
+        "author": "Estele Flippelli",
+        "price": "$2.37",
+        "DOI": "09/06/2024",
+        "genre": "Drama|Film-Noir|Romance"
+    },
+    {
+        "id": 21,
+        "title": "Borderline",
+        "author": "Caye Hutton",
+        "price": "$12.91",
+        "DOI": "16/11/2023",
+        "genre": "Crime|Drama|Romance"
+    },
+    {
+        "id": 22,
+        "title": "Grande école",
+        "author": "Margaret Marielle",
+        "price": "$16.79",
+        "DOI": "16/08/2024",
+        "genre": "Drama"
+    },
+    {
+        "id": 23,
+        "title": "Producers, The",
+        "author": "Hewett Jull",
+        "price": "$15.88",
+        "DOI": "02/03/2023",
+        "genre": "Comedy"
+    },
+    {
+        "id": 24,
+        "title": "Nanny Diaries, The",
+        "author": "Brade Tomaszek",
+        "price": "$17.65",
+        "DOI": "10/07/2022",
+        "genre": "Comedy|Drama|Romance"
+    },
+    {
+        "id": 25,
+        "title": "Marat/Sade",
+        "author": "Angelia Braniff",
+        "price": "$12.98",
+        "DOI": "29/06/2022",
+        "genre": "Drama|Musical"
+    },
+    {
+        "id": 26,
+        "title": "Tupac: Resurrection",
+        "author": "Roldan Jikylls",
+        "price": "$4.18",
+        "DOI": "04/02/2022",
+        "genre": "Documentary"
+    },
+    {
+        "id": 27,
+        "title": "Sacrificio: Who Betrayed Che Guevara",
+        "author": "Stanford Feacham",
+        "price": "$49.88",
+        "DOI": "17/08/2023",
+        "genre": "Documentary"
+    },
+    {
+        "id": 28,
+        "title": "And You Thought Your Parents Were Weird",
+        "author": "Glenda Sattin",
+        "price": "$5.11",
+        "DOI": "12/12/2023",
+        "genre": "Children|Comedy|Sci-Fi"
+    },
+    {
+        "id": 29,
+        "title": "Dead Awake",
+        "author": "Audy Lerway",
+        "price": "$47.11",
+        "DOI": "13/03/2024",
+        "genre": "Fantasy|Mystery|Romance|Thriller"
+    },
+    {
+        "id": 30,
+        "title": "Samurai (Samourais)",
+        "author": "Wendie Meininking",
+        "price": "$19.80",
+        "DOI": "29/01/2023",
+        "genre": "Action"
+    },
+    {
+        "id": 31,
+        "title": "Black Sheep",
+        "author": "Karie Castrillo",
+        "price": "$23.57",
+        "DOI": "27/06/2022",
+        "genre": "Comedy|Horror"
+    },
+    {
+        "id": 32,
+        "title": "Lowlands (Tiefland)",
+        "author": "Caterina Sutherley",
+        "price": "$42.13",
+        "DOI": "16/02/2024",
+        "genre": "Drama"
+    },
+    {
+        "id": 33,
+        "title": "Scusa ma ti chiamo amore",
+        "author": "Brok Arblaster",
+        "price": "$18.55",
+        "DOI": "22/10/2022",
+        "genre": "Romance"
+    },
+    {
+        "id": 34,
+        "title": "Dragon Ball Z: Fusion Reborn (Doragon bôru Z 12: Fukkatsu no fyushon!! Gokû to Bejîta)",
+        "author": "Fransisco Limpertz",
+        "price": "$23.77",
+        "DOI": "29/06/2023",
+        "genre": "Action|Adventure|Animation"
+    },
+    {
+        "id": 35,
+        "title": "Arrival of a Train, The",
+        "author": "Kilian Tooley",
+        "price": "$44.84",
+        "DOI": "14/06/2023",
+        "genre": "Documentary"
+    },
+    {
+        "id": 36,
+        "title": "Tarzan",
+        "author": "Adella Pindar",
+        "price": "$47.15",
+        "DOI": "05/05/2023",
+        "genre": "Adventure|Animation|Children|Drama"
+    },
+    {
+        "id": 37,
+        "title": "Over My Dead Body",
+        "author": "Rene Parren",
+        "price": "$9.24",
+        "DOI": "30/03/2022",
+        "genre": "Comedy|Fantasy|Romance"
+    },
+    {
+        "id": 38,
+        "title": "Holiday for Drumsticks",
+        "author": "Jena Rodge",
+        "price": "$40.66",
+        "DOI": "03/03/2024",
+        "genre": "(no genres listed)"
+    },
+    {
+        "id": 39,
+        "title": "Virginia City",
+        "author": "Emlynne Sayer",
+        "price": "$2.10",
+        "DOI": "24/01/2022",
+        "genre": "Action|Drama|Romance|Western"
+    },
+    {
+        "id": 40,
+        "title": "Lovecraft: Fear of the Unknown",
+        "author": "Emma Cecchetelli",
+        "price": "$48.94",
+        "DOI": "28/10/2023",
+        "genre": "Documentary"
+    }
+]

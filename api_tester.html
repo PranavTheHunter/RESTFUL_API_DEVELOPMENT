@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Books API Tester</h1>
+
+    <section id="book-list">
+        <h2>Book List</h2>
+        <button onclick="fetchBooks()">Load Books</button>
+        <table id="books-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Price</th>
+                    <th>DOI</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="add-book">
+        <h2>Add a Book</h2>
+        <form id="add-book-form">
+            <label>ID: <input type="number" name="id" required></label><br>
+            <label>Title: <input type="text" name="title" required></label><br>
+            <label>Author: <input type="text" name="author" required></label><br>
+            <label>Genre: <input type="text" name="genre" required></label><br>
+            <label>Price: <input type="number" step="0.01" name="price" required></label><br>
+            <label>DOI: <input type="date" name="doi" required></label><br>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <section id="update-book">
+        <h2>Update a Book</h2>
+        <form id="update-book-form">
+            <label>ID: <input type="number" name="id" required></label><br>
+            <label>Field to Update:</label><br>
+            <label>Title: <input type="text" name="title"></label><br>
+            <label>Author: <input type="text" name="author"></label><br>
+            <label>Genre: <input type="text" name="genre"></label><br>
+            <label>Price: <input type="number" step="0.01" name="price"></label><br>
+            <label>DOI: <input type="date" name="doi"></label><br>
+            <button type="submit">Update Book</button>
+        </form>
+    </section>
+
+    <section id="delete-book">
+        <h2>Delete a Book</h2>
+        <form id="delete-book-form">
+            <label>ID: <input type="number" name="id" required></label><br>
+            <button type="submit">Delete Book</button>
+        </form>
+    </section>
+
+    <script>
+        const fetchBooks = async () => {
+            const response = await fetch('/api/books');
+            const books = await response.json();
+
+            const tbody = document.querySelector('#books-table tbody');
+            tbody.innerHTML = '';
+            books.forEach(book => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${book.id}</td>
+                    <td>${book.title}</td>
+                    <td>${book.author}</td>
+                    <td>${book.genre}</td>
+                    <td>${book.price}</td>
+                    <td>${book.DOI}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        };
+
+        document.getElementById('add-book-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Create an object with form values
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries()); // Ensure it's an object
+
+            // Format price with dollar sign
+            if (data.price) {
+                data.price = `$${parseFloat(data.price).toFixed(2)}`; // Ensure the price is formatted with 2 decimal places
+            }
+
+            try {
+                // Send the form data to the server using fetch
+                const response = await fetch('/api/books', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                });
+                console.log(data);  // Check the data structure before sending it
+
+                if (response.ok) {
+                    alert('Book added successfully!');
+                    fetchBooks();  // Assuming you have a function to fetch and display books
+                    e.target.reset();  // Clear the form
+                } else {
+                    alert('Error adding book.');
+                }
+            } catch (error) {
+                alert('An error occurred while adding the book.');
+                console.error(error);  // Log the error for debugging
+            }
+        });
+
+        document.getElementById('update-book-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const id = formData.get('id');
+            formData.delete('id');
+
+            const updatedData = Object.fromEntries(formData);
+
+            const response = await fetch(`/api/books/${id}`, {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(updatedData)
+            });
+
+            if (response.ok) {
+                alert('Book updated successfully!');
+                fetchBooks();
+                e.target.reset();
+            } else {
+                alert('Error updating book.');
+            }
+        });
+
+        document.getElementById('delete-book-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const id = new FormData(e.target).get('id');
+
+            const response = await fetch(`/api/books/${id}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                alert('Book deleted successfully!');
+                fetchBooks();
+                e.target.reset();
+            } else {
+                alert('Error deleting book.');
+            }
+        });
+    </script>
+</body>
+</html>
