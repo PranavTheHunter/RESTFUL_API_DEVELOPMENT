@@ -22,3 +22,9 @@ Interactive forms to add, update, and delete books.
 Real-time updates of the book list after any CRUD operation.
 Price input that automatically formats with a dollar sign.
 Simple and user-friendly UI.
+
+**OUTPUTS**:
+![image](https://github.com/user-attachments/assets/3864c388-859a-49eb-8c60-c35a08880aff)
+![image](https://github.com/user-attachments/assets/5e5b2fc9-84ea-4b06-ac76-86d0c0523c91)
+![image](https://github.com/user-attachments/assets/856b3f8a-c1e8-4a2c-832c-141b5050e0eb)
+
